@@ -7,45 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flowing-liquid-9868</title>
     <link rel="stylesheet" href="./style/NavFooter.css">
+    <style>
+        #parentDispaly>div {
+            width: 500px;
+            margin: 5% auto;
+            /* background-color: red; */
+        }
+
+        #parentDispaly {
+            line-height: 25px;
+            font-size: 20px;
+        }
+
+        #parentDispaly>div>h1 {
+            margin-bottom: 25px;
+        }
+
+        #parentDispaly>div>img {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
+        #parentDispaly>div>p {
+            margin-bottom: 25px;
+        }
+
+        #parentDispaly>div>form>input {
+            width: 99%;
+            height: 50px;
+            margin: 15px 0px;
+            font-size: 20px;
+            padding-left: 5%;
+        }
+
+        #inputsubmit {
+            background-color: black;
+            color: white;
+        }
+
+        .requiredText {
+            opacity: 60%;
+            font-size: 15px;
+        }
+
+        #inputmessage {
+            position:fixed;
+            text-align: center;
+            left: 45%;
+            border-radius: 10%;
+            padding: 10px;
+            visibility: hidden;
+            border: 2px solid black;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- login part -->
-    <div id="inputmessage"></div>
-    <div id="loginBox">
-        <p id="cancelForm" onclick="closeForm()">X</p>
-        <div id="loginBoxDiv">
-            <div id="leftloginBox">
-                <h2>Sing In</h2>
-                <span class="footerUnderline">Reset Password</span>
-                <form id="loginsubmit">
-                    <h4>Email <span class="requiredText">required</span></h4>
-                    </p>
-                    <input type="email" id="loginemail" required>
-                    <p>
-                    <h4>Password <span class="requiredText">required</span></h4>
-                    </p>
-                    <input type="email" id="loginpassword" required><br>
-                    <input type="submit" value='SING IN' class="inputsubmit">
-                </form>
-                <p>or</p>
-                <img src="./image/cearte with google.png" alt="">
-                <p>By creating an account you are agreeing to our
-                    <span class="footerUnderline">Terms of Use</span>and
-                    <span class="footerUnderline">Privacy Policy</span>.
-                </p>
-            </div>
-            <div id="hrRotate"></div>
-            <div id="rightloginBox">
-                <h2>Create An  Account</h2>
-                <img src="./image/singup.png" alt="">
-                <button id='switchloginpage'class="inputsubmit">CREATE ACCOUNT</button>
-                <p>Don't have an account?<span class="footerUnderline">Track/Schedule Order</span></p>
-            </div>
-        </div>
-    </div> 
-
     <!-- nav part -->
+    <div id="inputmessage"></div>
 
     <nav class="nav_switcher">
         <div class="first_div">
@@ -61,7 +81,7 @@
         <input type="text" placeholder="What can we Help you find ? ">
         <a href="./index.html"><img src="./image/logo1.png" alt=""></a>
         <div>
-            <p id="loginclick"> <span id="loginText">Sing In</span> 🧕</p>
+            <p> <span id="loginText">Orders & Sing In</span> 🧕</p>
             <p id="location_rotete">🩸</p>
             <p>🖤<span>0</span></p>
             <p>🛒<span>0</span></p>
@@ -98,10 +118,42 @@
     <!-- display part -->
 
     <div id="parentDispaly">
-        <div id="inputmessage"></div>
-
+        <div>
+            <h1>Create an Account</h1>
+            <p>Want to check out faster, easily apply Rewards and keep track of your online and in-store orders? Create
+                an account now and save your payment method. It's even easier when you sign up using Google or Apple.
+            </p>
+            <img src="./image/cearte with google.png" alt="">
+            <form id="loginform">
+                <p>
+                <h3>First Name <span class="requiredText">required</span></h3>
+                </p>
+                <input type="text" id="inputname" required>
+                <p>
+                <h3>Last Name <span class="requiredText">required</span></h3>
+                </p>
+                <input type="text" id="inputlname" required>
+                <p>
+                <h3>Phone Number <span class="requiredText">required</span></h3>
+                </p>
+                <input type="number" id="inputnumber" required>
+                <p>
+                <h3>Email Address <span class="requiredText">required</span></h3>
+                </p>
+                <input type="email" id="inputemail" required>
+                <p>
+                <h3>Create Password <span class="requiredText">required</span></h3>
+                </p>
+                <input type="email" id="inputpassword" required><br>
+                <input type="submit" value='CREATE ACCOUNT' id="inputsubmit">
+            </form>
+            <p>By creating an account you are agreeing to our
+                <span class="footerUnderline">Terms of Use</span>and
+                <span class="footerUnderline">Privacy Policy</span>.
+            </p>
+        </div>
     </div>
-    
+
     <!-- footer part -->
 
     <footer>
@@ -120,7 +172,7 @@
                 <img src="./image/card.img.png" alt="">
                 <div>
                     <h4>Crate and Barrel Credit Card</h4>
-                    <p> Earn Reward Dollars every time you shop* (excluding special        financing purchases), plus <br> get
+                    <p> Earn Reward Dollars every time you shop* (excluding special financing purchases), plus <br> get
                         access to special <br> offers and events. <br>
                         <span class="footerUnderline">Apply Now</span> <br>
                         <span class="footerUnderline">Manage Your Account</span>
@@ -134,7 +186,8 @@
                     <p> Find out when your online purchase<br>
                         will arrive or schedule a delivery.<br>
                         <span class="footerUnderline">Track Your Order</span><br>
-                        <span class="footerUnderline">Schedule Delivery</span></p>
+                        <span class="footerUnderline">Schedule Delivery</span>
+                    </p>
                 </div>
             </div>
             <img src="https://images.crateandbarrel.com/is/image/Crate/CB-logo-GR_ampersand-white?fmt=png-alpha&wid=250&hei=419"
@@ -191,6 +244,49 @@
 
     </footer>
 </body>
-<script src="./script/singup.js"></script>
+<script>
+    let arr = JSON.parse(localStorage.getItem('loginDetails')) || []
+    let form = document.getElementById('loginform')
+    form.addEventListener('submit', function (e) {
+        e.preventDefault()
+        let checkemail = 1
+        arr.forEach((element) => {
+            console.log('k')
+            if (form.inputemail.value == element.email) {
+                checkemail = 0
+                inputmessage.style.visibility = 'visible'
+                inputmessage.innerText = 'Email Already Exist'
+                inputmessage.style.backgroundColor = 'red'
+                pushredMessage()
+
+            }
+        });
+        if (checkemail == 1) {
+            let obj = {
+                email: form.inputemail.value,
+                password: form.inputpassword.value
+            }
+            arr.push(obj)
+            console.log(arr)
+            localStorage.setItem('loginDetails', JSON.stringify(arr))
+
+            inputmessage.style.visibility = 'visible'
+            inputmessage.innerText = 'Account Created'
+            inputmessage.style.backgroundColor = 'green'
+            pushredMessage()
+            window.location.href = "./index.html";
+        }
+    })
+    function pushgreenMessage() {
+        setTimeout(() => {
+            inputmessage.style.visibility = 'hidden'
+        }, 2000);
+    }
+    function pushredMessage() {
+        setTimeout(() => {
+            inputmessage.style.visibility = 'hidden'
+        }, 2000);
+    }
+</script>
 
 </html>
