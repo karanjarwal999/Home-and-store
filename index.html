@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flowing-liquid-9868</title>
     <link rel="stylesheet" href="./style/NavFooter.css">
+    <link rel="stylesheet" href="./style/homeImg.css">
 </head>
 
 <body>
     <!-- login part -->
+    <img id="movetop" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi1t0asnSsmlL2R_lByWsXqO0M4PtofVLGrw&usqp=CAU" alt="karan" onclick="movetop()">
     <div id="inputmessage"></div>
     <div id="loginBox">
         <p id="cancelForm" onclick="closeForm()">X</p>
@@ -62,9 +64,10 @@
         <a href="./index.html"><img src="./image/logo1.png" alt=""></a>
         <div>
             <p id="loginclick"> <span id="loginText">Sing In</span> 🧕</p>
-            <p id="location_rotete">🩸</p>
-            <p>🖤<span>0</span></p>
-            <p>🛒<span>0</span></p>
+            <p id="location_rotete" onmouseenter="loc_hover()" onmouseleave="loc_nothover()">🩸</p>
+            <a href="./cart.html"><p>🖤<span id="likeelementnumber">0</span></p></a>
+            <a href="./cart.html"><p>🛒<span id="cartelementnumber">0</span></p></a>
+            <div id="location_hover"> <p>Shiping TO 7410</p></div>
         </div>
     </nav>
     <nav>
@@ -97,9 +100,74 @@
 
     <!-- display part -->
 
-    <div id="parentDispaly">
-        <div id="inputmessage"></div>
+    <select id="selectprice">
+        <option value="">All</option>
+        <option value="Below">Below 500</option>
+        <option value="Above">Above 500</option>
+    </select>
 
+    <div id="displaypage">
+    </div>
+    <div id="hompage">
+        <div id="img1">
+            <h1>the great living rooom referesh</h1>
+            <button>SHOP TOP RATED SOFAS</button>
+        </div>
+        <div id="img2flex">
+            <div id="img2">
+                <h1>stunning from every angel</h1>
+                <button>SHOP ACCENT CHAIRS</button>
+            </div>
+            <div id="img3">
+                <h1>now trending : livable color</h1>
+                <button>SHOP THROW PILLOWS</button>
+            </div>
+            <div id="img4">
+                <h1>desinged to wow</h1>
+                <button>SHOP COFFEE TABLES</button>
+            </div>
+            <div id="img5">
+                <h1>40+ new curtain styles</h1>
+                <button>SHOP THE COLLECTION</button>
+            </div>
+        </div>
+        <div id="img6">
+            <h1>new & fresh for spring</h1>
+            <button>SHOP 300+ NEW ARRIVALS</button>
+        </div>
+        <div id="img7">
+            <h1>light & natural in mood</h1>
+            <button>SHOP DINNIG FURNITURE</button>
+        </div>
+        <div id="img8">
+            <h1>90+ beautiful <br> new rugs</h1>
+            <button>SHOP THE COLLECTION</button>
+        </div>
+        <div id="img9">
+            <h1>find your forever everything</h1>
+            <button>CREATE YOUR REGISTRY</button>
+            <button>SHOP MOST-LOVED GIFTS</button>
+        </div>
+        <div id="img10">
+            <h1>your exclusive new hue</h1>
+            <button>SHOP NEW COOKWARE</button>
+        </div>
+        <div id="img11">
+            <h1>Home & kids</h1>
+            <button>SHOP NOW</button>
+        </div>
+        <div id="backvedio">
+            <video id="background-video" autoplay loop muted poster="https://cb.scene7.com/is/image/Crate/cb_dHP_20230102_BabyRegistry_Poster?wid=1920&qlt=50">
+            <source src="https://s7d5.scene7.com/is/content/Crate/Video/cb_dHP_20230102_BabyRegistry.mp4" type="video/mp4">
+            </video>
+            <img src="https://cb.scene7.com/is/image/Crate/cb_dHP_20220908_BRLogo?wid=455&qlt=90&fmt=png-alpha&op_sharpen=1" alt="">
+            <button>CREATE YOUR REGISTRY</button>
+        </div>
+        <div id="history">
+            <h2>HOME & KIDS HISTORY</h2>
+            <P>With over 100 stores in North America and franchise partners in 9 countries, Crate & Barrel, Crate & Kids and CB2 are the international destination for lasting, modern furniture, textiles, kitchen, tableware and home decor. See More -</P>
+        </div>
+        
     </div>
     
     <!-- footer part -->
@@ -188,9 +256,8 @@
                 for
                 assistance.</p>
         </div>
-
     </footer>
 </body>
-<script src="./script/singup.js"></script>
+<script src="./script/home.js"></script>
 
 </html>

@@ -12,6 +12,7 @@
 <body>
 
     <!-- login part -->
+    <img id="movetop" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi1t0asnSsmlL2R_lByWsXqO0M4PtofVLGrw&usqp=CAU" alt="karan" onclick="movetop()">
     <div id="inputmessage"></div>
     <div id="loginBox">
         <p id="cancelForm" onclick="closeForm()">X</p>
@@ -63,9 +64,10 @@
         <a href="./index.html"><img src="./image/logo2.png" alt=""></a>
         <div>
             <p id="loginclick"> <span id="loginText">Sing In</span> 🧕</p>
-            <p id="location_rotete">🩸</p>
-            <p>🖤<span>0</span></p>
-            <p>🛒<span>0</span></p>
+            <p id="location_rotete" onmouseenter="loc_hover()" onmouseleave="loc_nothover()">🩸</p>
+            <a href="./cart.html"><p>🖤<span id="likeelementnumber">0</span></p></a>
+            <a href="./cart.html"><p>🛒<span id="cartelementnumber">0</span></p></a>
+            <div id="location_hover"> <p>Shiping TO 7410</p></div>
         </div>
     </nav>
     <nav>
@@ -91,14 +93,18 @@
                 <li class="get_cat" value="Bed">Bedding & Bath</li>
                 <li class="get_cat" value="gift">Gifts</li>
                 <li class="get_cat" value="sale">SALE</li>
-                <li class="get_cat" value="kids">&Kids</li>
             </ul>
         </div>
     </nav>
 
     <!-- display part -->
-
-    <div id="parentDispaly">
+    
+    <select id="selectprice">
+        <option value="">All</option>
+        <option value="Below">Below 500</option>
+        <option value="Above">Above 500</option>
+    </select>
+    <div id="displaypage">
        
     </div>
     
@@ -191,6 +197,6 @@
 
     </footer>
 </body>
-<script src="./script/singup.js"></script>
+<script src="./script/kids.js"></script>
 
 </html>

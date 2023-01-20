@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowing-liquid-9868</title>
+    <link rel="stylesheet" href="./style/cart.css">
+</head>
+
+<body>
+    <nav class="nav_switcher">
+        <div class="first_div">
+            <a href="./index.html" class="heighlight">Home&store</a>
+            <a href="./kidspage.html" class="heighlight" id="pageActive">Cart</a>
+            <p class="heighlight cb2">CB2</p>
+            <p class="heighlight">HUDSON|GRACE</p>
+            <img src="https://cdn.pixabay.com/photo/2016/08/24/17/07/india-1617463__340.png" alt="india">
+        </div>
+        <p id="discount10"><b>Earn 10% back in Reward Dollars*</b>Learn How--></p>
+    </nav>
+    <nav id="nav_logo">
+        <input type="text" placeholder="What can we Help you find ? ">
+        <a href="./index.html"><img src="./image/logo1.png" alt=""></a>
+        <div>
+            <p id="location_rotete" onmouseenter="loc_hover()" onmouseleave="loc_nothover()">🩸</p>
+            <a href="./cart.html">
+                <p>🖤<span id="likeelementnumber">0</span></p>
+            </a>
+            <a href="./cart.html">
+                <p>🛒<span id="cartelementnumber">0</span></p>
+            </a>
+            <div id="location_hover">
+                <p>Shiping TO 7410</p>
+            </div>
+        </div>
+    </nav>
+    <hr>
+
+    <div id="displaypage">
+        <div id="cartview"></div>
+        <div id="vertline"></div>
+        <div id="likeview"></div>
+    </div>
+    <div id="placeorder">
+        <p>Cart Value: <span id="cartprice">0</span></p>
+        <p>Total Product: <span id="cartprocuct">0</span></p>
+        <button id="buynow" onclick="swicthscreen()">Buy Now</button>
+    </div>
+    <div id="orderdone">Order Placed</div>
+</body>
+<script>
+    function loc_hover() {
+        let location = document.getElementById('location_hover')
+        location.style.visibility = 'visible';
+    }
+    function loc_nothover() {
+        let location = document.getElementById('location_hover')
+        location.style.visibility = 'hidden'
+    }
+    updatecartvalue()
+    updatelikevalue()
+    function updatecartvalue() {
+        let cart = JSON.parse(localStorage.getItem('cart')) || []
+        let cartelementnumber = document.getElementById('cartelementnumber')
+        let cartprocuct=document.getElementById('cartprocuct')
+        cartelementnumber.innerText = cart.length
+        cartprocuct.innerText = cart.length
+    }
+    function updatelikevalue() {
+        let like = JSON.parse(localStorage.getItem('like')) || []
+        let likeelementnumber = document.getElementById('likeelementnumber')
+        likeelementnumber.innerText = like.length
+    }
+    let cart = JSON.parse(localStorage.getItem('cart')) || []
+    dispalycart(cart)
+    let like = JSON.parse(localStorage.getItem('like')) || []
+    dispalylike(like)
+
+    function dispalycart(data) {
+        let parent = document.getElementById('cartview')
+        parent.innerHTML = ''
+        let heading=document.createElement('h2')
+        heading.innerText="CART 🛒"
+        heading.style.textAlign='center'
+        parent.append(heading)
+        let sum=0
+        data.forEach((element) => {
+            let div = document.createElement('div')
+            let img = document.createElement('img')
+            img.setAttribute('src', element.img)
+            let div2 = document.createElement('div')
+            let name = document.createElement('h4')
+            name.innerText = element.name
+            let price = document.createElement('h4')
+            price.innerText = '$' + element.price
+            sum+=element.price
+            let button = document.createElement('button')
+            button.innerText = 'Remove'
+            button.addEventListener('click', function () {
+                filtered=cart.filter((ele)=>{
+                    if(ele==element){return false}
+                    return true
+                })
+                cart=filtered
+                localStorage.setItem('cart',JSON.stringify(cart))
+                dispalycart(cart)
+                  updatecartvalue()
+            })
+            div2.append(name, price, button)
+            div.append(img,div2)
+            parent.append(div)
+        });
+        let cartprice=document.getElementById('cartprice')
+        cartprice.innerText=sum
+    }
+
+    function dispalylike(data) {
+        let parent = document.getElementById('likeview')
+        parent.innerHTML = ''
+        let heading=document.createElement('h2')
+        heading.innerText="LIKE 💖"
+        heading.style.textAlign='center'
+        parent.append(heading)
+        data.forEach((element) => {
+            let div = document.createElement('div')
+            let img = document.createElement('img')
+            img.setAttribute('src', element.img)
+            let div2 = document.createElement('div')
+            let name = document.createElement('h4')
+            name.innerText = element.name
+            let price = document.createElement('h4')
+            price.innerText = '$' + element.price
+            let button = document.createElement('button')
+            button.innerText = 'Remove'
+            button.addEventListener('click', function () {
+                filtered=like.filter((ele)=>{
+                    if(ele==element){return false}
+                    return true
+                })
+                like=filtered
+                localStorage.setItem('like',JSON.stringify(like))
+                dispalylike(like)
+                  updatelikevalue()
+            })
+
+            let button2=document.createElement('button')
+               button2.innerText='Add To Cart'
+               button2.addEventListener('click',function(){
+                  cart.push(element)
+                  localStorage.setItem('cart',JSON.stringify(cart))
+                  updatecartvalue()
+                  updatelikevalue()
+                  dispalylike(like)
+                  dispalycart(cart)
+               })
+
+            div2.append(name, price, button,button2)
+            div.append(img,div2)
+            parent.append(div)
+        });
+
+    }
+    function swicthscreen() {
+       let orderdone=document.getElementById('orderdone')
+       orderdone.style.visibility='visible'
+       setTimeout(() => {
+        orderdone.style.visibility='hidden'
+       }, 1500); 
+    }
+
+
+
+
+
+</script>
+
+</html>
