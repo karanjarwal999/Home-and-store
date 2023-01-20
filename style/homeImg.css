@@ -1,0 +1,169 @@
+#img1{
+    height: 95vh;
+    padding-top: 50px;
+    background: url("https://cb.scene7.com/is/image/Crate/cb_dHP_20230111_HeroV2?wid=1440&qlt=80&op_sharpen=1") no-repeat;
+    background-size: cover;
+}
+#img1>h1,#img2>h1,#img3>h1,#img4>h1,#img5>h1,#img10>h1,#img11>h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+#img1>button,#img2>button,#img3>button,#img4>button,#img5>button,#img10>button,#img11>button{
+    display: block;
+    margin: auto;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+#img2flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+#img2{
+    height: 100vh;
+    padding-top: 50px;
+    width: 49.4vw;
+    background: url("https://cb.scene7.com/is/image/Crate/cb_dHP_20230111_AccentChairs?wid=720&qlt=80") no-repeat;
+    background-size: cover;
+}
+#img3{
+    height: 100vh;
+    padding-top: 50px;
+    width: 49.4vw;
+    background: url("https://cb.scene7.com/is/image/Crate/cb_dHP_20230111_ThrowPillows?wid=720&qlt=80&op_sharpen=1") no-repeat;
+    background-size: cover;
+}
+#img4{
+    height: 100vh;
+    padding-top: 50px;
+    width: 49.4vw;
+    background: url("https://cb.scene7.com/is/image/Crate/cb_dHP_20230111_CoffeeTables?wid=720&qlt=80") no-repeat;
+    background-size: cover;
+}
+#img5{
+    height: 100vh;
+    padding-top: 50px;
+    width: 49.4vw;
+    background: url("https://cb.scene7.com/is/image/Crate/cb_dHP_20230112_CurtainsV2?wid=720&qlt=80&op_sharpen=1") no-repeat;
+    background-size: cover;
+}
+#img6{
+    height: 100vh;
+    padding-top: 50px;
+    padding-left: 50px;
+    background: url("https://cb.scene7.com/is/image/Crate/cb_dHP_20230111_NewArrivals_Fallback_V2?wid=2880&qlt=50") no-repeat;
+    background-size: cover;
+}
+#img6>h1,#img7>h1,#img8>h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: white;
+}
+#img6>button,#img7>button,#img8>button{
+    display: block;
+    font-size: 25px;
+    background-color: white;
+    border: none;
+    padding: 5px;
+}
+#img7{
+    height: 100vh;
+    padding-top: 50px;
+    padding-left: 250px;
+    background: url("https://cb.scene7.com/is/image/Crate/cb_dHP_20230111_DiningRoom?wid=1440&qlt=80&op_sharpen=1") no-repeat;
+    background-size: cover;
+}
+#img8{
+    height: 100vh;
+    padding-top: 50px;
+    text-align: end;
+    padding-right: 100px;
+    background: url("https://cb.scene7.com/is/image/Crate/cb_dHP_20230111_Rugs?wid=1440&qlt=80&op_sharpen=1") no-repeat;
+    background-size: cover;
+}
+#img8>h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: black;
+}
+#img8>button{
+    display: block;
+    margin-left: 80%;
+    font-size: 23px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+#img9{
+    height: 100vh;
+    padding-top: 50px;
+    padding-left: 100px;
+    background: url("https://cb.scene7.com/is/image/Crate/cb_dHP_20230103_Hero?wid=1440&qlt=90&op_sharpen=1") no-repeat;
+    background-size: cover;
+}
+#img9>h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: black;
+}
+#img9>button{
+    display: block;
+    font-size: 23px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px;
+    margin-bottom: 30px;
+}
+#img9>button:nth-child(3){
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+#img10{
+    height: 100vh;
+    padding-top: 50px;
+    background: url("https://cb.scene7.com/is/image/Crate/cb_dHP_20221225_8_Cookware?wid=1440&qlt=80&op_sharpen=1") no-repeat;
+    background-size: cover;
+}
+#img11{
+    height: 100vh;
+    padding-top: 50px;
+    background: url("https://cb.scene7.com/is/image/Crate/cb_dHP_20230102_CrateKids?wid=1440&qlt=80&op_sharpen=1") no-repeat;
+    background-size: cover;
+}
+#img11>h1{
+    font-size: 70px;
+}
+#history{
+    padding: 1% 15%;
+}
+#history>p{
+    font-size: 18px;
+}
+#backvedio{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#backvedio>img{
+    width: 200px;
+}
+#backvedio>button{
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    padding: 5px;
+}
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+  }

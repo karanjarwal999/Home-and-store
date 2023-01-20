@@ -73,6 +73,7 @@
 
 #location_rotete {
     transform: rotate(180deg);
+    cursor: pointer;
 }
 
 #nav_logo>div {
@@ -80,10 +81,14 @@
     justify-content: space-between;
 }
 
-#nav_logo>div>p {
+#nav_logo>div>p ,#nav_logo>div>a>p{
     font-size: 20px;
     color: transparent;
     text-shadow: 0 0 0 black;
+    text-decoration: none;
+}
+#nav_logo>div>a {
+    text-decoration: none;
 }
 
 #loginText {
@@ -101,6 +106,7 @@
     background-size: 8%;
     font-size: 15px;
     border: 1px solid;
+    padding-left: 15px;
 
 }
 
@@ -325,4 +331,44 @@ hr {
     visibility: hidden;
     border: 2px solid black;
     color: white;
+}
+
+/* searchbox */
+#displaypage{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+#displaypage>div{
+    padding: 5%;
+}
+#displaypage>div>button{
+    padding: 2%;
+}
+#displaypage>div>img{
+    width: 100%;
+}
+#displaypage>div>h4:nth-child(3){
+    padding: 2%;
+    color: green;
+}
+#selectprice{
+    margin-left: 2%;
+    font-size: 20px;
+    visibility: hidden;
+}
+#location_hover{
+    visibility: hidden;
+    position: absolute;
+    padding: 1%;
+    border: 1px solid;
+    background-color: white;
+    top: 14%;
+    right: 11%;
+}
+#movetop{
+   border: 2px solid black;
+   width: 40px;
+   position: fixed;
+   right: 0%;
+   bottom: 30%;
 }
