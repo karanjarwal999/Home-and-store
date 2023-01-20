@@ -24,28 +24,28 @@
 #img2{
     height: 100vh;
     padding-top: 50px;
-    width: 49.4vw;
+    width: 49vw;
     background: url("https://cb.scene7.com/is/image/Crate/cb_dHP_20230111_AccentChairs?wid=720&qlt=80") no-repeat;
     background-size: cover;
 }
 #img3{
     height: 100vh;
     padding-top: 50px;
-    width: 49.4vw;
+    width: 49vw;
     background: url("https://cb.scene7.com/is/image/Crate/cb_dHP_20230111_ThrowPillows?wid=720&qlt=80&op_sharpen=1") no-repeat;
     background-size: cover;
 }
 #img4{
     height: 100vh;
     padding-top: 50px;
-    width: 49.4vw;
+    width: 49vw;
     background: url("https://cb.scene7.com/is/image/Crate/cb_dHP_20230111_CoffeeTables?wid=720&qlt=80") no-repeat;
     background-size: cover;
 }
 #img5{
     height: 100vh;
     padding-top: 50px;
-    width: 49.4vw;
+    width: 49vw;
     background: url("https://cb.scene7.com/is/image/Crate/cb_dHP_20230112_CurtainsV2?wid=720&qlt=80&op_sharpen=1") no-repeat;
     background-size: cover;
 }
@@ -167,3 +167,5 @@
     position: absolute;
     z-index: -1;
   }
+
+  
