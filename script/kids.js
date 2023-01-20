@@ -78,6 +78,8 @@ let searchinput = document.querySelector('#nav_logo>input')
 searchinput.addEventListener('keypress', function (e) {
     if (e.key == 'Enter') {
         e.preventDefault()
+        let homepage=document.getElementById('hompage')
+        homepage.innerHTML=''
         fetchproduct()
         async function fetchproduct() {
             let request = await fetch('./api.json')

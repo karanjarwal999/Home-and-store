@@ -7,12 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flowing-liquid-9868</title>
     <link rel="stylesheet" href="./style/NavFooter.css">
+    <link rel="stylesheet" href="./style/kidspage.css">
 </head>
 
 <body>
 
     <!-- login part -->
-    <img id="movetop" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi1t0asnSsmlL2R_lByWsXqO0M4PtofVLGrw&usqp=CAU" alt="karan" onclick="movetop()">
+    <img id="movetop"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi1t0asnSsmlL2R_lByWsXqO0M4PtofVLGrw&usqp=CAU"
+        alt="karan" onclick="movetop()">
     <div id="inputmessage"></div>
     <div id="loginBox">
         <p id="cancelForm" onclick="closeForm()">X</p>
@@ -39,20 +42,20 @@
             </div>
             <div id="hrRotate"></div>
             <div id="rightloginBox">
-                <h2>Create An  Account</h2>
+                <h2>Create An Account</h2>
                 <img src="./image/singup.png" alt="">
-                <button id='switchloginpage'class="inputsubmit">CREATE ACCOUNT</button>
+                <button id='switchloginpage' class="inputsubmit">CREATE ACCOUNT</button>
                 <p>Don't have an account?<span class="footerUnderline">Track/Schedule Order</span></p>
             </div>
         </div>
-    </div> 
+    </div>
 
     <!-- nav part -->
 
     <nav class="nav_switcher">
         <div class="first_div">
             <a href="./index.html" class="heighlight">Home&store</a>
-            <a href="./kidspage.html" class="heighlight"id="pageActive">Kids&store</a>
+            <a href="./kidspage.html" class="heighlight" id="pageActive">Kids&store</a>
             <p class="heighlight cb2">CB2</p>
             <p class="heighlight">HUDSON|GRACE</p>
             <img src="https://cdn.pixabay.com/photo/2016/08/24/17/07/india-1617463__340.png" alt="india">
@@ -60,14 +63,21 @@
         <p id="discount10"><b>Earn 10% back in Reward Dollars*</b>Learn How--></p>
     </nav>
     <nav id="nav_logo">
+        <button id="showresponsivemenu">⇋</button>
         <input type="text" placeholder="What can we Help you find ? ">
         <a href="./index.html"><img src="./image/logo2.png" alt=""></a>
         <div>
             <p id="loginclick"> <span id="loginText">Sing In</span> 🧕</p>
             <p id="location_rotete" onmouseenter="loc_hover()" onmouseleave="loc_nothover()">🩸</p>
-            <a href="./cart.html"><p>🖤<span id="likeelementnumber">0</span></p></a>
-            <a href="./cart.html"><p>🛒<span id="cartelementnumber">0</span></p></a>
-            <div id="location_hover"> <p>Shiping TO 7410</p></div>
+            <a href="./cart.html">
+                <p>🖤<span id="likeelementnumber">0</span></p>
+            </a>
+            <a href="./cart.html">
+                <p>🛒<span id="cartelementnumber">0</span></p>
+            </a>
+            <div id="location_hover">
+                <p>Shiping TO 7410</p>
+            </div>
         </div>
     </nav>
     <nav>
@@ -98,16 +108,87 @@
     </nav>
 
     <!-- display part -->
-    
+
     <select id="selectprice">
         <option value="">All</option>
         <option value="Below">Below 500</option>
         <option value="Above">Above 500</option>
     </select>
-    <div id="displaypage">
-       
+    <div id="displaypage"></div>
+    <div id="hompage">
+        <div id="img1">
+            <h1>designed for dreaming</h1>
+            <button>SHOP NURSARY FERNITURE</button>
+        </div>
+        <div id="img2">
+            <h1>Our new color palette <br>was inspired by the <br>subtle,beautiful hugs of <br>a springtime sunrise</h1>
+            <button>SHOP BY FABRIC</button>
+            <button>SHOP ALL BEDDING</button>
+        </div>
+        <div id="backvedio">
+            <video id="background-video" autoplay loop muted>
+                <source src="https://s7d5.scene7.com/is/content/Crate/HomePage/Crate&kids/2023/1. January/ck_dHP_20230112_RugsVideo_Crate.mp4"
+                    type="video/mp4">
+            </video>
+            <h1>your all new rugs collection</h1>
+            <button>SHOP 40+ NEW RUGS</button>
+        </div>
+        <div id="img3">
+            <h1>just in: 100s of <br>new arrivals</h1>
+            <button>SHOP NOW</button>
+        </div>
+        <div id="img4">
+            <h1>clear the clutter</h1>
+            <button>SHOP TOP-RATED STORAGE</button>
+        </div>
+        <div id="img5">
+           <img src="https://cb.scene7.com/is/image/Crate/ck_dHP_20220818_BabyKids_BRLogo?wid=400&qlt=90&fmt=png-alpha&op_sharpen=1" alt="">
+            <button>CREATE YOURS NOW</button>
+        </div>
+        <div id="img6">
+            <h1>must-have to make life easier</h1>
+            <button>SHOP BABY GEAR</button>
+        </div>
+        <div id="img7">
+            <h1>calling all dreamers</h1>
+            <div id="scrollbar">
+                <img src="https://cb.scene7.com/is/image/Crate/ck_dHP_20230102_Baby_13UGC_jillabstencox_v2?wid=469&qlt=90&op_sharpen=1" alt="">
+                <img src="https://cb.scene7.com/is/image/Crate/ck_dHP_20230102_Baby_13UGC_ashleynmoses_v2?wid=469&qlt=90&op_sharpen=1" alt="">
+                <img src="https://cb.scene7.com/is/image/Crate/ck_dHP_20230102_Baby_13UGC_westrosedesign_v2?wid=469&qlt=90&op_sharpen=1" alt="">
+                <img src="https://cb.scene7.com/is/image/Crate/ck_dHP_20230102_Baby_13UGC__dangkhanh_v2?wid=469&qlt=90&op_sharpen=1" alt="">
+                <img src="https://cb.scene7.com/is/image/Crate/ck_dHP_20230102_Baby_13UGC_hellorefuge_v2?wid=469&qlt=90&op_sharpen=1" alt="">
+                <img src="https://cb.scene7.com/is/image/Crate/ck_dHP_20230102_Baby_13UGC_cocoroni.ro_v2?wid=469&qlt=90&op_sharpen=1" alt="">
+                <img src="https://cb.scene7.com/is/image/Crate/ck_dHP_20230102_Baby_13UGC_julie.leffell.photo_v2?wid=469&qlt=90&op_sharpen=1" alt="">
+                <img src="https://cb.scene7.com/is/image/Crate/ck_dHP_20230102_Baby_13UGC_amandakrovic_v2?wid=469&qlt=90&op_sharpen=1" alt="">
+                <img src="https://cb.scene7.com/is/image/Crate/ck_dHP_20230102_Baby_13UGC_westrosedesign_v2?wid=469&qlt=90&op_sharpen=1" alt="">
+            </div>
+            <button>SHERE & SHOP WITH #KIDS&STORESTYEL</button>
+        </div>
+        <div id="related">
+            <h3>Categories Related to Baby & Kids</h3>
+            <span>Kids Nautical Bedding</span>
+            <span>Organic Baby Clothes</span>
+            <span>Ampersand Design Studio</span>
+            <span>Amy Van Luijk</span>
+            <span>Animal Baby Bedding</span>
+            <span>Art Clips</span>
+        </div>
+        <div id="description">
+            <h4>Modern Kids Furniture, Bedding and Decor</h4>
+            <p>Whether redecorating your big kid's bedroom or finishing your child's play space, Crate & Kids (formerly The Land of Nod) helps make sure you have everything you need to help them be their best selves. Shopping for modern kids furniture? Durable beds, dressers and nightstands are ready for whatever tykes throw at them. If you're working with limited floor space, no worries. Small space kids' furniture fits comfortably in apartments, lofts and rooms with limited capacity. For your little one's bed, be sure to find kids' bedding suited to their style and sleeping preferences. Area rugs, poufs and bean bags for kids help enhance their space for optimum comfort and style. Families looking to create a study area for homework can choose a kids' study desk with a hutch and rolling kids' desk chair, making it easier to focus. Finish the space with kids' curtains, lighting and playroom decor from this online kids' store that fits their evolving personality.</p>
+            <h4>Modern Baby and Nursery Furniture, Bedding and Decor</h4>
+            <p>Preparing for your family's newest addition? The Crate & Kids baby store makes it easy for new parents to shop everything they need. Get a head start on your modern nursery with the basics. Think a crib with a coordinating dresser and changing table topper, as well as a baby room rocking chair that caters to your own comfort while cuddling with or feeding baby. For parents who are working with limited space, go for a mini crib instead. Or, if you're thinking long-term, find a convertible crib that transforms into a toddler or twin bed down the road. No matter their sleeping situation, use crib bedding that's soft and comfortable. A mobile hanging from the ceiling helps your new addition drift to sleep and friendly animal head wall decor keeps them smiling.</p>
+            <h4>Baby and Kids Gifts, Toys and Storage</h4>
+            <p>Looking for gifts and toys? Give the ideal present that helps bring their imagination to life with playhouses and arts and crafts supplies, or nurture their creativity with collaborative games, like chess and indoor bowling. Toddler toys like wooden blocks and stuffed animals are fun picks for smaller children, while activity mats and chairs are ideal for babies just getting an introduction to the world around them. Get the right kids' storage solutions with bookshelves, boxes and chests to help pack away all their clothes and toys. From baby to toddler and beyond, make sure your family has the furniture, bedding and toys you need to help your kids tackle each and every day.</p>
+            <h4>What is the difference between Crate & Barrel and CB2?</h4>
+            <p>CB2 is a high-design furniture and home decor store with collections ranging from contemporary pieces to rediscovered vintage icons. All crafted with premium materials and exceptional quality.</p>
+            <p>*Purchases subject to credit approval. Special financing purchases do not earn Reward Dollars. Cardholders will earn 20% back instead of 10% back in Reward Dollars for every $1.00 in net merchandise purchases (minus returns, refunds or credit adjustments) made at Crate & Barrel (including Crate & Kids) or CB2 catalogs, stores or websites located in the United States November 10 15, 2022, unless the Special Financing Option is chosen. Gift Cards do not earn Double Rewards. Accrued Reward Dollars will be posted to your Reward Dollars balance within 1 or2 billing cycles from when the purchase is posted to your Account and will automatically be redeemed for Reward Certificates within 1 to 2 billing cycles when the threshold (currently 20 Reward Dollars) is met. Reward Certificates are issued in $20 increments with a maximum of 10,000 Reward Dollars being redeemed in any one billing cycle and are valid for 90 days. The full amount of the Reward Certificate must be used at time of redemption (any remaining amount not used is forfeited). Reward Certificates may not be combined with any other discount (including associate discounts), except as otherwise provided. Rewards Terms and Conditions apply. See the Rewards Program Terms for details on earning rewards.
+            </p>
+            <p>The Crate & Barrel Mastercard® is issued by Synchrony Bank pursuant to a license by Mastercard International Incorporated. Mastercard and the circles design are registered trademarks of Mastercard International Incorporated.</p>
+        </div>
+        
+
     </div>
-    
     <!-- footer part -->
 
     <footer>
@@ -126,7 +207,7 @@
                 <img src="./image/card.img.png" alt="">
                 <div>
                     <h4>Crate and Barrel Credit Card</h4>
-                    <p> Earn Reward Dollars every time you shop* (excluding special        financing purchases), plus <br> get
+                    <p> Earn Reward Dollars every time you shop* (excluding special financing purchases), plus <br> get
                         access to special <br> offers and events. <br>
                         <span class="footerUnderline">Apply Now</span> <br>
                         <span class="footerUnderline">Manage Your Account</span>
@@ -140,11 +221,12 @@
                     <p> Find out when your online purchase<br>
                         will arrive or schedule a delivery.<br>
                         <span class="footerUnderline">Track Your Order</span><br>
-                        <span class="footerUnderline">Schedule Delivery</span></p>
+                        <span class="footerUnderline">Schedule Delivery</span>
+                    </p>
                 </div>
             </div>
             <img src="https://images.crateandbarrel.com/is/image/Crate/CB-logo-GR_ampersand-white?fmt=png-alpha&wid=250&hei=419"
-                alt="">
+                alt="" id="upperFooterlastimg">
         </div>
         <hr>
         <div id="midFooter">

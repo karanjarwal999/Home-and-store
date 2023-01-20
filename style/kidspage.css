@@ -1,0 +1,125 @@
+#img1{
+    height: 98vh;
+    background: url("https://cb.scene7.com/is/image/Crate/ck_dHP_20230102_Baby_1Hero?wid=1440&qlt=80&op_sharpen=1") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#img1>h1,#img3>h1,#img4>h1,#img6>h1,#img7>h1{
+    font-size: 50px;
+}
+#img1>button,#img3>button,#img4>button,#img5>button,#img6>button,#img7>button{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+}
+#img2{
+    height: 98vh;
+    background: url("https://cb.scene7.com/is/image/Crate/ck_dHP_20230102_Baby_2Bedding?wid=1440&qlt=80&op_sharpen=1") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10% 10% 0% 0%;
+    text-align: center;
+}
+#img2>h1,#backvedio>h1{
+    color: white;
+    font-size: 50px;
+}
+#img2>button,#backvedio>button{
+    background-color: white;
+    border: 2px solid white;
+    padding: 5px;
+    font-size: 25px;
+    margin-right: 10%;
+    margin-top: 1%;
+}
+#backvedio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+#background-video{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+}
+#backvedio>button{
+    margin-left: 8%;
+}
+#img3{
+    height: 98vh;
+    background: url("https://cb.scene7.com/is/image/Crate/ck_dHP_20230102_Baby_3NewArrivals?wid=1440&qlt=80&op_sharpen=1") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 5% 5% 0% 0%;
+    text-align: end;
+}
+#img4{
+    height: 98vh;
+    background: url("https://cb.scene7.com/is/image/Crate/ck_dHP_20230102_Kids_8Storage?wid=1440&qlt=80&op_sharpen=1") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#img5{
+    height: 98vh;
+    background: url("https://cb.scene7.com/is/image/Crate/ck_dHP_20230102_Kids_11BabyRegistry?wid=1440&qlt=80&op_sharpen=1") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#img6{
+    height: 98vh;
+    background: url("https://cb.scene7.com/is/image/Crate/ck_dHP_20230102_Baby_11Gear?wid=1440&qlt=80&op_sharpen=1") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 5% 5% 0% 0%;
+}
+#img7{
+    height: 98vh;
+    background-color: rgb(254, 246, 232);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#scrollbar{
+    margin: 2%;
+    display: flex;
+    overflow: auto;
+}
+#scrollbar>img{
+    width: 30%;
+    margin: 0% 1%;
+    border: 2px solid black;
+}
+#description{
+    padding: 2% 11%;
+    line-height: 25px;
+}
+#related{
+    padding: 2% 11% 0% 11%;
+}
+#related>h3{
+    padding-bottom: 2%;
+}
+#related>span{
+    background-color: lightgray;
+    margin-right: 1%;
+    padding: 0.5%;
+}
