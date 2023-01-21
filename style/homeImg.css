@@ -18,8 +18,8 @@
     padding: 5px;
 }
 #img2flex{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns:  auto auto;
 }
 #img2{
     height: 100vh;
@@ -150,9 +150,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* border: 2px solid red; */
 }
 #backvedio>img{
-    width: 200px;
+    width: 25%;
 }
 #backvedio>button{
     background-color: black;
@@ -166,6 +167,84 @@
     object-fit: cover;
     position: absolute;
     z-index: -1;
+  }
+  @media screen and (max-width:600px){
+    #img2,#img3,#img5,#img4{
+        height: 50vw;
+        /* border: 2px solid red; */
+    }
+    #img2>button,#img3>button,#img5>button,#img4>button{
+       font-size: 10px;
+    }
+    #img2>h1,#img3>h1,#img5>h1,#img4>h1{
+        font-size: 20px;
+    }
+    #img1,#img6,#img7,#img8,#img9,#img10,#img11,#backvedio{
+        height: 30vh;
+    }
+    #img1>button,#img6>button,#img7>button,#img8>button,#img9>button,#img10>button,#img11>button,#backvedio>button{
+        /* border: 2px solid blue; */
+        font-size: 10px;
+            margin: auto;
+    }
+    #img1>h1,#img6>h1,#img7>h1,#img8>h1,#img9>h1,#img10>h1,#img11>h1,#backvedio>h1{
+            /* border: 2px solid green; */
+            font-size: 20px;
+            text-align: center;
+            align-items: center;
+            margin: auto;
+    }
+    #backvideo>img{
+        width: 10px;
+    }
+    #background-video {
+        height: 30vh;
+        object-fit:cover;
+        position: absolute;
+        z-index: -1;
+        /* border: 2px solid red; */
+      }
+
+  }
+  /* @media screen and (min-width:600px) and (max-width:1050){ */
+    @media screen and (min-width:600px) and (max-width:1050px){
+    #img2,#img3,#img5,#img4{
+        height: 50vw;
+        /* border: 2px solid red; */
+    }
+    #img2>button,#img3>button,#img5>button,#img4>button{
+       font-size: 14px;
+    }
+    #img2>h1,#img3>h1,#img5>h1,#img4>h1{
+        font-size: 25px;
+    }
+    #img1,#img6,#img7,#img8,#img9,#img10,#img11,#backvedio{
+        height: 60vh;
+    }
+    #img1>button,#img6>button,#img7>button,#img8>button,#img9>button,#img10>button,#img11>button,#backvedio>button{
+        /* border: 2px solid blue; */
+        font-size: 15px;
+            margin: auto;
+    }
+    #img1>h1,#img6>h1,#img7>h1,#img8>h1,#img9>h1,#img10>h1,#img11>h1,#backvedio>h1{
+            /* border: 2px solid green; */
+            font-size: 40px;
+            text-align: center;
+            align-items: center;
+            margin: auto;
+    }
+    #backvideo>img{
+        width: 10px;
+        /* align-items: center; */
+    }
+    #background-video {
+        height: 60vh;
+        object-fit:cover;
+        position: absolute;
+        z-index: -1;
+        /* border: 2px solid red; */
+      }
+
   }
 
   
