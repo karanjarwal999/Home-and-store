@@ -123,3 +123,28 @@
     margin-right: 1%;
     padding: 0.5%;
 }
+@media screen and (min-width:600px) and (max-width:1050px){
+    #img1,#img2,#img3,#img4,#img5,#img6,#img7,#backvedio{
+        height: 60vh;
+    }
+    #img1>button,#img2>button,#img3>button,#img4>button,#img5>button,#img6>button,#img7>button,#backvedio>button{
+        font-size: 25px;
+    }
+    #img5>img{
+       width: 30vw;
+    }
+}
+@media screen and (max-width:600px){
+    #img1,#img2,#img3,#img4,#img5,#img6,#img7,#backvedio{
+        height: 40vh;
+    }
+    #img1>button,#img2>button,#img3>button,#img4>button,#img5>button,#img6>button,#img7>button,#backvedio>button{
+        font-size: 12px;
+    }
+    #img1>h1,#img2>h1,#img3>h1,#img4>h1,#img5>h1,#img6>h1,#img7>h1,#backvedio>h1{
+        font-size: 30px;
+    }
+    #img5>img{
+       width: 30vw;
+    }
+}
