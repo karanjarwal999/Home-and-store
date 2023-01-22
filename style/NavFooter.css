@@ -11,7 +11,7 @@ body{
     display: none;
 }
 #getmenu{
-    /* display: none; */
+    display: none;
     position: fixed;
     left: 0%;
     height: 100vh;
@@ -24,11 +24,12 @@ body{
 }
 #sidediv1{
     display: flex;
+    cursor: pointer;
     color: white;
-    height: 50px;
     justify-content: space-between;
     align-items: center;
-    font-size: 17px;
+    font-size: 20px;
+    height: 70px;
 }
 .sidediv2{
     display: flex;
@@ -38,15 +39,32 @@ body{
 .sidediv2>a{
     width: 40%;
     color: white;
-    padding: 10px;
+    padding: 13px;
     border: 1px solid white;
     text-align: center;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 23px;
 }
 #sidepageactive{
     background-color: white;
     color: black;
+}
+#sidecategory>ul{
+    display: flex;
+    height: 83vh;
+    /* background-color: black; */
+    /* border: 2px solid red; */
+    list-style: none;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+    /* gap: 1px; */
+}
+#sidecategory>ul>li{
+    border: 0.5px solid rgb(245, 243, 243);
+    padding: 15px 0px 16px 20px;
+    cursor: pointer;
+    
 }
 
 

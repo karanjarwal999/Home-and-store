@@ -15,6 +15,22 @@ function loc_nothover(){
     location.style.visibility='hidden'
 }
 
+// new side
+let sidelogin=document.getElementById('sidelogin2')
+let getmenu=document.getElementById('getmenu')
+let showresponsivemenu=document.getElementById('showresponsivemenu')
+let closeside=document.getElementById('closeside')
+sidelogin.addEventListener('click',function(){
+    loginform.style.visibility='visible'
+    getmenu.style.display="none"
+})
+showresponsivemenu.addEventListener('click',function(){
+    getmenu.style.display="block"
+})
+closeside.addEventListener('click',function(){
+    getmenu.style.display="none"
+})
+
 let loginclick = document.getElementById('loginclick')
 loginclick.style.cursor = 'pointer'
 loginclick.addEventListener('click', function () {
@@ -78,8 +94,6 @@ let searchinput = document.querySelector('#nav_logo>input')
 searchinput.addEventListener('keypress', function (e) {
     if (e.key == 'Enter') {
         e.preventDefault()
-        let homepage=document.getElementById('hompage')
-        homepage.innerHTML=''
         fetchproduct()
         async function fetchproduct() {
             let request = await fetch('./api.json')
@@ -98,40 +112,59 @@ searchinput.addEventListener('keypress', function (e) {
 
         })
 
-        function kidssearchproduct(data) {
-            selectprice.style.visibility = 'visible'
-            let parent = document.getElementById('displaypage')
-            parent.innerHTML = ''
-            data.forEach((element) => {
-                let div = document.createElement('div')
-                let img = document.createElement('img')
-                img.setAttribute('src', element.img)
-                let name = document.createElement('h4')
-                name.innerText = element.name
-                let price = document.createElement('h4')
-                price.innerText = '$' + element.price
-                let button=document.createElement('button')
-                button.innerText='Add To Cart'
-                button.addEventListener('click',function(){
-                   cart.push(element)
-                   localStorage.setItem('cart',JSON.stringify(cart))
-                   updatecartvalue()
-                })
-                let button2=document.createElement('button')
-                button2.innerText='💖'
-                button2.addEventListener('click',function(){
-                   like.push(element)
-                   localStorage.setItem('like',JSON.stringify(like))
-                   updatelikevalue()
-                })
-                div.append(img,name,price,button,button2)
-                parent.append(div)
-            });
-
-        }
-
+        
     }
 })
+function kidssearchproduct(data) {
+    selectprice.style.visibility = 'visible'
+    let parent = document.getElementById('displaypage')
+    parent.innerHTML = ''
+    let homepage=document.getElementById('hompage')
+        homepage.innerHTML=''
+    data.forEach((element) => {
+        let div = document.createElement('div')
+        let img = document.createElement('img')
+        img.setAttribute('src', element.img)
+        let name = document.createElement('h4')
+        name.innerText = element.name
+        let price = document.createElement('h4')
+        price.innerText = '$' +' '+ element.price
+        let button=document.createElement('button')
+        button.innerText='Add To Cart'
+        button.addEventListener('click', function () {
+            let cartflag = true
+            cart.forEach((ele) => {
+                if (ele.img == element.img) {
+                    inputmessage.style.visibility = 'visible'
+                    inputmessage.innerText = 'product alredy in cart'
+                    inputmessage.style.backgroundColor = 'red'
+                    cartflag = false
+                    pushredMessage()
+                }
+            });
+            if (cartflag == true) {
+                cart.push(element)
+                localStorage.setItem('cart', JSON.stringify(cart))
+                inputmessage.style.visibility = 'visible'
+                inputmessage.innerText = 'product added Successfully'
+                inputmessage.style.backgroundColor = 'green'
+                pushredMessage()
+                updatecartvalue()
+            }
+        })
+        let button2=document.createElement('button')
+        button2.innerText='💖'
+        button2.addEventListener('click',function(){
+           like.push(element)
+           localStorage.setItem('like',JSON.stringify(like))
+           updatelikevalue()
+        })
+        div.append(img,name,price,button,button2)
+        parent.append(div)
+    });
+
+}
+
 function updatecartvalue() {
     let cart = JSON.parse(localStorage.getItem('cart')) || []
     let cartelementnumber = document.getElementById('cartelementnumber')
@@ -142,4 +175,12 @@ function updatelikevalue() {
     let likeelementnumber = document.getElementById('likeelementnumber')
     likeelementnumber.innerText = like.length
 }
+async function catproduct(str) {
+    let request = await fetch('./kids.json')
+    let data = await request.json()
+    globaldata = data[str]
+    // console.log(globaldata)
+    kidssearchproduct(globaldata)
+}
+
 
