@@ -14,7 +14,7 @@ This project is clone of "https://www.crateandbarrel.com/" and I gave another na
 * This project content 2 home pages:-
   1. Landing pade  (Home&store) 
   
-     ![home page 1](https://user-images.githubusercontent.com/119421686/226376698-1d47f485-   7b85-4aa1-9d64-568525b122c9.png)
+     ![home page 1](https://user-images.githubusercontent.com/119421686/226376698-1d47f485-7b85-4aa1-9d64-568525b122c9.png)
 
   2. second page  (Kids&page)
   
