@@ -1,17 +1,25 @@
 
 Hello there,
-This project is clone of "https://www.crateandbarrel.com/" and I gave another name to our clone project is "Home&store".
+
+
+This project is clone of " crateandbarrel " [https://www.crateandbarrel.com/] and I gave another name to our clone project is "Home&store".
+
 
 I use some follownig tech stacks to build this project :-
+
 ● HTML
+
 ● CSS
+
 ● Javascript
+
 
 This project is live at :-
 Netlify- https://flowingliquid.netlify.app/
 
 
 I have build following 3 main Pages other UI of this website :-
+
 
 *  create&barrel website contains two  home page so, i have also created two home and pthey are :-
 
