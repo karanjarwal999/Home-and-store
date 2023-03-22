@@ -1,17 +1,27 @@
-# flowing-liquid-9868
-
-Project Title :- Home&store
+#Home&store
 
 Hello there,
 
-This is solo project ,and  I am the programmer who build this project .The intention was to just practice my skills on real life project , Time required to build  this project is 4 Days and i use some follownig tech stacks to build this project :-
+I use some follownig tech stacks to build this project :-
 ● HTML
 ● CSS
 ● Javascript
 
-This project is clone of "https://www.crateandbarrel.com/" and I gave another name to our clone project is "Home&store". i have build following 3 main Pages other UI of this website :-
+This project is clone of "https://www.crateandbarrel.com/" and I gave another name to our clone project is "Home&store".
 
-* This project content 2 home pages:-
+I use some follownig tech stacks to build this project :-
+● HTML
+● CSS
+● Javascript
+
+This project is live at :-
+Netlify- https://flowingliquid.netlify.app/
+
+
+I have build following 3 main Pages other UI of this website :-
+
+*  create&barrel website contains two  home page so, i have also created two home and pthey are :-
+
   1. Landing pade  (Home&store) 
   
      ![home page 1](https://user-images.githubusercontent.com/119421686/226376698-1d47f485-7b85-4aa1-9d64-568525b122c9.png)
