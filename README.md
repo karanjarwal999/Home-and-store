@@ -1,12 +1,5 @@
-#Home&store
 
 Hello there,
-
-I use some follownig tech stacks to build this project :-
-● HTML
-● CSS
-● Javascript
-
 This project is clone of "https://www.crateandbarrel.com/" and I gave another name to our clone project is "Home&store".
 
 I use some follownig tech stacks to build this project :-
