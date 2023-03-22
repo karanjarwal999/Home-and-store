@@ -2,7 +2,7 @@
 Hello there,
 
 
-This project is clone of " crateandbarrel " [https://www.crateandbarrel.com/] and I gave another name to our clone project is "Home&store".
+This project is clone of  [crateandbarrel](https://www.crateandbarrel.com/)  and I gave another name to our clone project is "Home&store".
 
 
 I use some follownig tech stacks to build this project :-
@@ -47,7 +47,7 @@ I have build following 3 main Pages other UI of this website :-
 
   ![Cart page](https://user-images.githubusercontent.com/119421686/226378658-ee643d74-92d3-48e8-910a-702c2c9a43b6.png)
 
-* Checkout page-
+* Checkout UI-
 
   ![Checkout page](https://user-images.githubusercontent.com/119421686/226378831-c1645ede-f11a-4059-9097-a145e859888a.png)
 
